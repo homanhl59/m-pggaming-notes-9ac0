@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次遇见 · pg游戏</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f7f3ed;
+            color: #3d3a36;
+            font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
+            line-height: 1.8;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 252, 245, 0.8);
+            padding: 2.5rem 2.2rem;
+            border-radius: 28px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.03);
+            backdrop-filter: blur(2px);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 0.25rem;
+            color: #4b423a;
+            border-left: 4px solid #c0a98b;
+            padding-left: 1.2rem;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #8b7d6e;
+            margin-bottom: 2rem;
+            padding-left: 1.6rem;
+            font-style: italic;
+            border-bottom: 1px dashed #d6cdbc;
+            padding-bottom: 0.6rem;
+        }
+        .opening {
+            font-size: 1.2rem;
+            padding: 1.2rem 1.6rem;
+            background: #efe8de;
+            border-radius: 20px;
+            margin: 1.6rem 0 1.2rem;
+            color: #3d332b;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+            line-height: 1.9;
+        }
+        .opening::first-letter {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #7f6a55;
+            margin-right: 2px;
+        }
+        .intro-text {
+            margin: 1.6rem 0 1.4rem;
+            padding-right: 0.4rem;
+        }
+        .story-remark {
+            background: #f2ece3;
+            padding: 1.2rem 1.8rem;
+            border-radius: 24px 8px 24px 8px;
+            margin: 1.8rem 0;
+            font-size: 0.98rem;
+            border-left: 5px solid #b7a48b;
+            color: #4a3f36;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .story-remark p {
+            margin-bottom: 0.5rem;
+        }
+        .story-remark p:last-child {
+            margin-bottom: 0;
+        }
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            margin: 1.8rem 0 1.2rem;
+            padding: 0 0.2rem;
+        }
+        .feature-item {
+            flex: 1 1 200px;
+            background: #faf6ef;
+            padding: 0.9rem 1.2rem;
+            border-radius: 16px;
+            border: 1px solid #e3dacd;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            line-height: 1.6;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .feature-item strong {
+            display: block;
+            font-weight: 500;
+            color: #5f5143;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+        .feature-item:hover {
+            background: #efe6d9;
+            border-color: #c7b49d;
+            transform: translateY(-2px);
+        }
+        .gentle-closing {
+            margin-top: 2.4rem;
+            padding: 1.2rem 1.8rem;
+            background: #f3ede5;
+            border-radius: 40px 8px 40px 8px;
+            font-size: 0.98rem;
+            color: #3d352e;
+            border: 1px solid #ddcfbe;
+        }
+        .gentle-closing p {
+            margin-bottom: 0.6rem;
+        }
+        .gentle-closing p:last-child {
+            margin-bottom: 0;
+        }
+        .bookmark-note {
+            margin: 2rem 0 0.8rem;
+            text-align: right;
+            font-size: 0.85rem;
+            color: #897b6b;
+            border-top: 1px solid #ddd0be;
+            padding-top: 1rem;
+            letter-spacing: 0.3px;
+        }
+        a {
+            color: #6f5b48;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a088;
+            transition: border 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #3f3025;
+            border-bottom: 1px solid #3f3025;
+        }
+        .inline-link {
+            font-weight: 400;
+            background: transparent;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.8rem; }
+            .page { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+            .subhead { padding-left: 1rem; }
+            .opening { padding: 1rem 1.2rem; font-size: 1.1rem; }
+            .feature-item { flex: 1 1 100%; }
+            .story-remark { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>再一次，回到这里</h1>
+    <div class="subhead">· 收藏，然后慢慢看 ·</div>
+
+    <div class="opening">
+        有些页面，第一次是偶遇，第二次就成了习惯。<br>
+        你大概也试过——打开浏览器的书签夹，翻过几屏，忽然又看见那个名字。
+    </div>
+
+    <div class="intro-text">
+        <p>我不是一个频繁换入口的人。但有一处地方，后来总会顺手点开。不是因为它换了多新的模样，而是因为它保持着某种恰好的节奏——不吵，不赶，每次进去都能找到自己上次停留的位置。想想，大概是因为它的内容铺陈得从容，也因为它从未试图用浮夸的句子留住谁。</p>
+        <p style="margin-top: 0.8rem;">我说的，就是那个叫 <a href="https://m-pggaming.com" class="inline-link">pg游戏</a> 的去处。谈不上多惊艳，但就是让人愿意把它留在收藏夹里，隔段时间再翻出来看看。像一本旧杂志，纸角卷了，但内容还是耐读的。</p>
+    </div>
+
+    <div class="story-remark">
+        <p><strong>收藏的理由，往往很小：</strong></p>
+        <p>— 页面加载不拖沓，点开就能继续上次的浏览；<br>
+        — 分类清晰，想找某个主题不会翻三遍；<br>
+        — 最要紧的是，它从不塞给你一堆闪烁的广告，让你分心。</p>
+        <p style="margin-top: 0.6rem; font-style: italic;">——这些细节，用久了才会发现。</p>
+    </div>
+
+    <div class="feature-list">
+        <div class="feature-item">
+            <strong>· 安静的结构</strong>
+            没有弹窗，没有自动播放，一屏之内就能看到主要内容。
+        </div>
+        <div class="feature-item">
+            <strong>· 像老朋友一样</strong>
+            每次回去，布局还是那个布局，不必重新适应。
+        </div>
+        <div class="feature-item">
+            <strong>· 持续更新，但不打扰</strong>
+            新内容会静静地出现，等你某天自己发现。
+        </div>
+        <div class="feature-item">
+            <strong>· 适合慢慢读</strong>
+            文字和画面之间留够了呼吸的空隙，不赶时间。
+        </div>
+    </div>
+
+    <div class="gentle-closing">
+        <p>后来我养成一个习惯：每周总会有一两个晚上，打开书签，点进 <a href="https://m-pggaming.com">pg游戏</a>，不做什么特别的事，就看看最近有什么新动静。有时候只是翻翻之前看过的页面，像是拜访一个安静的邻居。</p>
+        <p>如果你也恰好路过这里，不妨也把它收进收藏夹。不一定天天看，但你知道它在那里，就好。</p>
+        <p style="margin-top: 0.8rem; text-align: right; color: #7d6f5e;">—— 一个普通访客的备忘录</p>
+    </div>
+
+    <div class="bookmark-note">
+        ⏺ 书签已就位 · 下次回来不会迷路
+    </div>
+</div>
+</body>
+</html>
